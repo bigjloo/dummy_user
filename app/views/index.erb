@@ -1,0 +1,15 @@
+<div>
+<h2>Create account</h2>
+<form action= "/create" method= "post">
+  <input type= "text" name= "new_fullname" placeholder= "Name"><br>
+  <input type= "text" name= "new_email" placeholder= "email"><br>
+  <input type= "text" name= "new_password" placeholder= "password"><br>
+  <input type= "submit" value= "Sign up!">
+</form>
+<form action= "/log_in" method= "get">
+<input type= "submit" value= "Log In!">
+</form>
+</div>
+<% if !@error.nil? %>
+  <b><%= @error %></b><br>
+<% end %>

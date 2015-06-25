@@ -1,0 +1,14 @@
+<div>
+  <% if !@create_success.nil? %>
+    <b><%= @create_success %></b><br>
+  <% end %>
+  <form action= "/user_account" method= "post">
+  <input type= "text" name= "email" placeholder= "email"><br>
+  <input type= "text" name= "password" placeholder= "password"><br>
+  <input type= "submit" value= "Log In">
+  </form>
+  <% if !@error.nil? %>
+    <b><%= @error %></b><br>
+  <% end %>
+
+</div>
